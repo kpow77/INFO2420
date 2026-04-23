@@ -33,9 +33,10 @@ nav {
 }
 
 article {
-	float: left;
-	width: 650px;
+	float: right;
+	width: 600px;
 	text-align: center;
+	overflow: hidden;
 }
 
 footer {
@@ -57,7 +58,7 @@ nav a {
 	line-height: 250%;
 	font-weight: bold;
 	font-size: 35px;
-	color:#DD9A69;
+	color:#E3B3BF;
 	text-decoration: none;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -69,12 +70,26 @@ nav a:hover {
 	border: 2px outset #C88F90;
 }
 h1 {
-	color: aliceblue;
-	text-align: right;
+	color: #E3B3BF;
+	text-align: center;
 	font-size: xx-large;
 
 	
 }
 p {
 	color:blanchedalmond;
+}
+h2{
+	color: #E3B3BF;
+	text-align: center;
+	font-size: large;
+}
+h3{
+	color:lightslategrey;
+	text-align: center;
+	font-size: large;
+}
+.thumbnailleft{
+	float: left;
+	padding-right: 10px;
 }
