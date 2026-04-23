@@ -11,21 +11,20 @@ body 	{
 
 
 header   {
-	align-content
-	align-items
-	align-self
-	alignment-baseline 
-	all 
-	animation
-	animation-delay
-		
+	width: 900px;
+	height: 200px;
+	background-color: coral;
+	text-align: center;
+	margin: auto;
+			
 }
-section: 	{
+section 	{
 		width: 900px;
-		background-image: url('images/CardinalSmall.jpg');
+		background-image: url('images/2colback.jpg');
 		background-repeat: repeat-y;
 		overflow: hidden;
 		margin: auto;
+
 }
 
 nav {
@@ -39,3 +38,43 @@ article {
 	text-align: center;
 }
 
+footer {
+	text-align: center;
+	width: 900px;
+	height: 70px;
+	background-color: coral;
+	margin: auto;
+}
+.logoleft{
+	float: left;
+	padding-top: 0px;
+	padding-left: 15px;
+}
+
+nav a {
+	border: 6px inset #8F4E3B;
+	background-color: coral;
+	line-height: 250%;
+	font-weight: bold;
+	font-size: 35px;
+	color:#DD9A69;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 20px;
+	font-family:sans-serif;		
+}
+nav a:hover {
+	color: antiquewhite;
+	border: 2px outset #C88F90;
+}
+h1 {
+	color: aliceblue;
+	text-align: right;
+	font-size: xx-large;
+
+	
+}
+p {
+	color:blanchedalmond;
+}

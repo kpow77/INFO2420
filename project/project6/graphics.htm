@@ -40,61 +40,48 @@
 
 <script language="JavaScript" type="text/javascript">
 
-	PrintButton1 = new Image
-	PrintButton2 = new Image
-	logo1 = new Image
-	logo2 = new Image
-if (document.images) {
-	PrintButton1.src = "images/print5.gif"
-	PrintButton2.src = "images/print6.gif"
-	logo1.src = "images/logo1.jpg"
-	logo2.src = "images/logo2.jpg"
-}
+var PrintButton1 = new Image();
+    var PrintButton2 = new Image();
+    var logo1 = new Image();
+    var logo2 = new Image();
 
+    if (document.images) {
+        PrintButton1.src = "images/print5.gif";
+        PrintButton2.src = "images/print6.gif";
+        logo1.src = "images/logo1.jpg";
+        logo2.src = "images/logo2.jpg";
+    }
 
-		var imgArray = new Array(
-			'Image1Lg.jpg',
-			'Image2Lg.jpg',
-			'Image3Lg.jpg',
-			'Image4Lg.jpg'
-			
+    var imgArray = [
+        "Image1Lg.jpg",
+        "Image2Lg.jpg",
+        "Image3Lg.jpg",
+        "Image4Lg.jpg"
+    ];
 
-		);
+    var titleArray = [
+        "Bald Eagle",
+        "Group of Geese",
+        "Heron",
+        "2 Pelicans"
+    ];
 
+    var imgPath = "images/FullSize/";
 
-		var titleArray = new Array(
-			'Eagle',
-			'Group of Geese',
-			'Heron',
-			'2 Pelicans'
-			
-		);
-			
-		var imgPath = "Images/Fullsize/";
-		
-		function swapImage(imgID) {
+    function swapImage(imgID) {
+        document.getElementById("theImage").src = imgPath + imgArray[imgID];
+        document.getElementById("bottomText").innerHTML = titleArray[imgID];
+    }
 
-			var theImage = document.getElementById('theImage');
-			var textDiv = document.getElementById('bottomText');
+    function preloadImages() {
+        for (var i = 0; i < imgArray.length; i++) {
+            var tmpImg = new Image();
+            tmpImg.src = imgPath + imgArray[i];
+        }
+    }
 
-			var newImg;
-			var textTitle;
+    window.onload = preloadImages;
 
-			newImg = imgArray[imgID];
-			theImage.src = imgPath + newImg;
-
-			textTitle=titleArray[imgID];
-
-      			textDiv.innerHTML = textTitle;
-		}
-			
-		function preloadImages() {		
-			for(var i = 0; i < imgArray.length; i++) {
-				var tmpImg = new Image;
-				tmpImg.src = imgPath + imgArray[i];
-			}
-		}
-		
 
 </script>
 
@@ -104,11 +91,11 @@ if (document.images) {
 
 <div align="center">
 
-<div>
+<div id="print">
 	<a href="" onMouseOver="document.PrintButton.src=PrintButton2.src;"
 	onMouseOut="document.PrintButton.src=PrintButton1.src;">
 
-	<img src="images/print5.gif" width="250" height="50" 
+	<img src="Images/print5.gif" width="250" height="50" 
 	name="PrintButton" alt="PrintButton" style="border:none;"/>
 
 	</a>
@@ -120,7 +107,7 @@ if (document.images) {
 	<a href="logo.html" onMouseOver="document.logo.src=logo2.src;"
 	onMouseOut="document.logo.src=logo1.src;">
 
-	<img src="images/logo1.jpg" width="133" height="126" 
+	<img src="Images/logo1.jpg" width="150" height="175" 
 	name="logo" alt="logo" style="border:none;"/>
 
 	</a>
@@ -144,15 +131,10 @@ if (document.images) {
 
 		<img id="theImage" src="Images/FullSize/Image1Lg.jpg" alt="Eagle" />
 		<h3 id="bottomText">Eagle</h3>
-		<img id="theImage" src="Images/FullSize/Image2Lg.jpg" alt="Geese" />
-		<h3 id="bottomText">Geese</h3>
-		<img id="theImage" src="Images/FullSize/Image3Lg.jpg" alt="Heron" />
-		<h3 id="bottomText">Heron</h3>
-		<img id="theImage" src="Images/FullSize/Image4Lg.jpg" alt="2 Pelicans" />
-		<h3 id="bottomText">2 </h3>
+
 	</div>
 
-<img src="images/2colback.jpg">
+<img src="Images/2colback.jpg">
 
 <br />
 <br />
