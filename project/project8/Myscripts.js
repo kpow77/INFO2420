@@ -11,33 +11,33 @@
         logo2.src = "images/logo2.jpg";
     }
 
-    var imgArray = [
-        "Image1Lg.jpg",
-        "Image2Lg.jpg",
-        "Image3Lg.jpg",
-        "Image4Lg.jpg"
-    ];
+ var imgArray = [
+    "Image1Lg.jpg",
+    "Image2Lg.jpg",
+    "Image3Lg.jpg",
+    "Image4Lg.jpg"
+];
 
-    var titleArray = [
-        "Bald Eagle",
-        "Group of Geese",
-        "Heron",
-        "2 Pelicans"
-    ];
+var titleArray = [
+    "Bald Eagle",
+    "Group of Geese",
+    "Heron",
+    "2 Pelicans"
+];
 
-    var imgPath = "images/";
+var imgPath = "../images/";
 
-    function swapImage(imgID) {
-        document.getElementById("theImage").src = imgPath + imgArray[imgID];
-        document.getElementById("bottomText").innerHTML = titleArray[imgID];
+function swapImage(imgID) {
+    document.getElementById("theImage").src = imgPath + imgArray[imgID];
+    document.getElementById("bottomText").innerHTML = titleArray[imgID];
+}
+
+function preloadImages() {
+    for (var i = 0; i < imgArray.length; i++) {
+        var tmpImg = new Image();
+        tmpImg.src = imgPath + imgArray[i];
     }
-
-    function preloadImages() {
-        for (var i = 0; i < imgArray.length; i++) {
-            var tmpImg = new Image();
-            tmpImg.src = imgPath + imgArray[i];
-        }
-    }
+}
 
     window.onload = preloadImages;
 
