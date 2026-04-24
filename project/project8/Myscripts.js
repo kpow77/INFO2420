@@ -15,7 +15,7 @@
         "Image1Lg.jpg",
         "Image2Lg.jpg",
         "Image3Lg.jpg",
-        "Image4Lg.jpg"
+        "Image4lg.jpg"
     ];
 
     var titleArray = [
