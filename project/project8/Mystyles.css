@@ -76,7 +76,6 @@ h1 {
  font-size: xx-large;
   text-align:center;
   color: #E3B3BF;
-  padding: 3em 1em 2em 1em;
   text-shadow: .1em .1em .2em grey;
 }
 p {
@@ -126,12 +125,14 @@ font-size:100%;
 	src: local('Denora'), url('Denora/Denora.otf') format('truetype') ;
 	}
 
-td { font-size: #10px;
-			background-color:#6bba3d;
-			text-align: center;
-			border-radius: 5px;
-			border: 3px solid #1d2f20;
-			color: #17497C ;
+td td {
+    font-family: 'Denora', Arial, sans-serif;
+    font-size: 10px;
+    background-color: #6bba3d;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px solid #1d2f20;
+    color: #17497C;
 		}
 th  	{ border: 3px solid #1d2f20;
 		padding: 5px;
