@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+body 	{
+		background-color:aqua;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: medium;
+		color:aquamarine;
+		
+}
+
+
+header   {
+	width: 900px;
+	height: 200px;
+	background-color: coral;
+	text-align: center;
+	margin: auto;
+			
+}
+section 	{
+		width: 900px;
+		background-image: url('images/2colback.jpg');
+		background-repeat: repeat-y;
+		overflow: hidden;
+		margin: auto;
+
+}
+
+nav {
+	float: left;
+	widows: 250px;
+}
+
+article {
+	float: right;
+	width: 600px;
+	text-align: center;
+	overflow: hidden;
+}
+
+footer {
+	text-align: center;
+	width: 900px;
+	height: 70px;
+	background-color: coral;
+	margin: auto;
+}
+.logoleft{
+	float: left;
+	padding-top: 0px;
+	padding-left: 15px;
+}
+
+nav a {
+	border: 6px inset #8F4E3B;
+	background-color: coral;
+	line-height: 250%;
+	font-weight: bold;
+	font-size: 35px;
+	color:#E3B3BF;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 20px;
+	font-family:sans-serif;		
+}
+nav a:hover {
+	color: antiquewhite;
+	border: 2px outset #C88F90;
+}
+h1 {
+  margin-top: 0;
+  padding: 3em 1em 2em 1em;
+  font-family: Denora;
+ font-size: xx-large;
+  text-align:center;
+  color: #E3B3BF;
+  padding: 3em 1em 2em 1em;
+  text-shadow: .1em .1em .2em grey;
+}
+p {
+	color:blanchedalmond;
+}
+h2 {
+font-family: Denora;
+color: 	#E3B3BF;
+text-shadow: .1em .1em .2em grey;
+font-size: large;
+}
+h3{
+	color:lightslategrey;
+	text-align: center;
+	font-size: large;
+}
+.thumbnailleft{
+	float: left;
+	padding-right: 10px;
+}
+
+.thumbnailright{
+	float: right;
+	padding-left: 10px;
+}
+
+a:link
+{
+	color:#6bba3d;
+}
+a:visited
+{
+color:#cd9e67;
+}
+a:hover
+{
+color:#c6755c;
+}
+h4 { 
+text-align:center;
+}
+h6{
+font-size:100%;
+}
+@font-face{
+	font-family:'Denora'; 
+	src: local('Denora'), url('Denora/Denora.otf') format('truetype') ;
+	}
