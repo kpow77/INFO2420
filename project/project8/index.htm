@@ -3,37 +3,60 @@
 
 <style>
     body {
-        background-color: lightblue;
+        background-color: #B98449;
         text-align: center;
         font-family: Arial, sans-serif;
     }
 
     h1 {
         margin-top: 30px;
-        color: #1f3f5b;
+        color: white;
     }
 
     .link-box {
-        width: 260px;
+        width: 700px;
         margin: 20px auto;
-        padding: 20px;
-        text-align: center;
-        border: 2px solid #333;
-        border-radius: 10px;
-        background-color: #f5f5f5;
+        padding: 30px;
+        border: 2px solid white;
+        border-radius: 15px;
+        background-color: antiquewhite;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
     }
 
-    .link-box div {
-        margin-bottom: 20px;
+    .bird-link {
+        position: relative;
+        display: inline-block;
+        width: 160px;
+        height: 160px;
+        text-decoration: none;
     }
 
-    .link-box p {
+    .bird-link img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid white;
+        display: block;
+    }
+
+    .bird-link p {
+        position: absolute;
+        top: 6px;
+        left: 8px;
+        right: 8px;
+        margin: 0;
         font-weight: bold;
-        margin-bottom: 8px;
-    }
-
-    .link-box img {
-        border: 1px solid #333;
+        font-size: 14px;
+        color: #1f1f1f;
+        background-color: rgba(250, 235, 215, 0.65);
+        border: 1px solid rgba(92, 58, 30, 0.8);
+        border-radius: 6px;
+        padding: 3px 5px;
     }
 </style>
 
@@ -41,40 +64,30 @@
 
 <div class="link-box">
 
-    <div>
-        <p>Go to the About Us page</p>
-        <a href="aboutus.htm">
-            <img src="Images/BaldEagleSm.jpg" alt="link to About Us" width="200" height="150">
-        </a>
-    </div>
+    <a class="bird-link" href="Home.htm">
+        <img src="Images/Image3Sm.jpg" alt="link to Home">
+        <p>Home</p>
+    </a>
 
-    <div>
-        <p>Go to the Favorites page</p>
-        <a href="Favorites.htm">
-            <img src="Images/SwanSmall.jpg" alt="link to Favorites" width="200" height="150">
-        </a>
-    </div>
+    <a class="bird-link" href="aboutus.htm">
+        <img src="Images/BaldEagleSm.jpg" alt="link to About Us">
+        <p>About Us</p>
+    </a>
 
-    <div>
-        <p>Go to the Survey page</p>
-        <a href="Survey.htm">
-            <img src="Images/Hummingbird.jpg" alt="link to Survey" width="200" height="150">
-        </a>
-    </div>
+    <a class="bird-link" href="Favorites.htm">
+        <img src="Images/SwanSmall.jpg" alt="link to Favorites">
+        <p>Favorites</p>
+    </a>
 
-    <div>
-        <p>Go to the Home page</p>
-        <a href="Home.htm">
-            <img src="Images/Image3Sm.jpg" alt="link to Home" width="200" height="150">
-        </a>
-    </div>
+    <a class="bird-link" href="Survey.htm">
+        <img src="Images/Hummingbird.jpg" alt="link to Survey">
+        <p>Survey</p>
+    </a>
 
-    <div>
-        <p>Go to the Tributes page</p>
-        <a href="Tributes.htm">
-            <img src="Images/Image4Sm.jpg" alt="link to Tributes" width="200" height="150">
-        </a>
-    </div>
+    <a class="bird-link" href="Tributes.htm">
+        <img src="Images/Image4Sm.jpg" alt="link to Tributes">
+        <p>Tributes</p>
+    </a>
 
 </div>
 
