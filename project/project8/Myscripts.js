@@ -25,7 +25,7 @@ var titleArray = [
     "2 Pelicans"
 ];
 
-var imgPath = "../images/";
+var imgPath = "images/";
 
 function swapImage(imgID) {
     document.getElementById("theImage").src = imgPath + imgArray[imgID];
