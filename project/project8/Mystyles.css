@@ -125,3 +125,19 @@ font-size:100%;
 	font-family:'Denora'; 
 	src: local('Denora'), url('Denora/Denora.otf') format('truetype') ;
 	}
+
+td { font-size: #10px;
+			background-color:#6bba3d;
+			text-align: center;
+			border-radius: 5px;
+			border: 3px solid #1d2f20;
+			color: #17497C ;
+		}
+th  	{ border: 3px solid #1d2f20;
+		padding: 5px;
+		border-radius: 5px;
+		background-color: #197A21 ;
+		font-size:17px;
+		color:#929518;
+		font-family: Denora;
+		}
